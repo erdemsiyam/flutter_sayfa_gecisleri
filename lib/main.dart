@@ -1,17 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sayfa_gecisleri/page1.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    print('MyApp');
+    return MaterialApp(
+      home: PageMain(),
+    );
+  }
+}
+
+class PageMain extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Page1(),
+    );
   }
 }
